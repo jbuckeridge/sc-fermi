@@ -5,7 +5,7 @@
 Energies in eV, temperature in Kelvin, DOS in states/unit cell
 
 ------
-j.buckeridge@ucl.ac.uk 2016
+j.buckeridge@ucl.ac.uk 2017
 **************************************************************
 
 The program calculates the self-consistent Fermi level and defect
@@ -19,8 +19,19 @@ in the columns. The energy scale must be given with the VBM
 (or Fermi level for a metal) set to zero (in eV). The DOS is
 assumed to be in #states/cell.
 
+The code uses a statistical mechanical approach to calculate
+the concentrations of each defect in each charge state,
+balanced by the free carrier concentrations from the DOS. 
+Relevant equations can be found in e.g. Ashcroft and Mermin
+chapter 28. The output gives a breakdown on the concentrations
+in each charge state (unless the total is zero).
+
 frozen-sc-fermi can be used to fix a particular defect 
-concentration to a value of interest.
+concentration to a value of interest. You can fix the total
+concentration of a defect in your original list, or one or 
+more charge states (or both). You can also add extra defects
+with fixed concentrations, but these must be given a 
+particular charge state.
 
 Please see the input files in the example directory, they 
 should be self-explanatory.
