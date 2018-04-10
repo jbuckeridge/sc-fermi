@@ -39,3 +39,9 @@ should be self-explanatory.
 Any questions please email me (see above).
 
 John
+
+******
+May 2017 - improved algorithms 
+Feb 2018 - added warning for negative DOS values
+Apr 2018 - fixed problem with underflow checks in frozen
+           version
