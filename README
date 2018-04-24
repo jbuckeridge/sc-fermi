@@ -11,9 +11,14 @@ j.buckeridge@ucl.ac.uk 2017
 The program calculates the self-consistent Fermi level and defect
 concentrations given a set of formation energies (at VBM).
 
-It is currently designed to work with VASP input i.e. the 
-POSCAR for which the DOS has been calculated is required. The
-DOS should be present in a file called 'totdos.dat' which
+The lattice vectors of the unit cell for which the density of
+states (DOS) has been calculated should be contained in a file
+called 'unitcell.dat', which consists of a scaling factor,
+followed by the lattice vectors in a 3x3 matrix. If this 
+file is missing, but a VASP POSCAR is found, the cell parameters
+will be read from the POSCAR.
+
+The DOS should be present in a file called 'totdos.dat' which
 is 2 (or 3 for spin polarised) columned, with energy and DOS
 in the columns. The energy scale must be given with the VBM
 (or Fermi level for a metal) set to zero (in eV). The DOS is
@@ -43,5 +48,4 @@ John
 ******
 May 2017 - improved algorithms 
 Feb 2018 - added warning for negative DOS values
-Apr 2018 - fixed problem with underflow checks in frozen
-           version
+Apr 2018 - series of bugfixes for errors occuring at low T
