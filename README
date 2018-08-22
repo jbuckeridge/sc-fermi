@@ -19,10 +19,11 @@ file is missing, but a VASP POSCAR is found, the cell parameters
 will be read from the POSCAR.
 
 The DOS should be present in a file called 'totdos.dat' which
-is 2 (or 3 for spin polarised) columned, with energy and DOS
-in the columns. The energy scale must be given with the VBM
-(or Fermi level for a metal) set to zero (in eV). The DOS is
-assumed to be in #states/cell.
+is 2 (or 3 for spin polarised, where each value of DOS is
+positive) columned, with energy and DOS in the columns. The 
+energy scale must be given with the VBM (or Fermi level for a 
+metal) set to zero (in eV). The DOS is assumed to be in 
+#states/cell and should not contain negative values.
 
 The code uses a statistical mechanical approach to calculate
 the concentrations of each defect in each charge state,
@@ -49,3 +50,4 @@ John
 May 2017 - improved algorithms 
 Feb 2018 - added warning for negative DOS values
 Apr 2018 - series of bugfixes for errors occuring at low T
+Aug 2018 - improved specification for spin pol DOS input
