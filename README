@@ -5,7 +5,7 @@
 Energies in eV, temperature in Kelvin, DOS in states/unit cell
 
 ------
-j.buckeridge@ucl.ac.uk 2017
+j.buckeridge@ucl.ac.uk 2018
 **************************************************************
 
 The program calculates the self-consistent Fermi level and defect
@@ -46,6 +46,8 @@ Any questions please email me (see above).
 
 John
 
+******
+MIT Open Source Licence
 ******
 May 2017 - improved algorithms 
 Feb 2018 - added warning for negative DOS values
