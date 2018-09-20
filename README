@@ -54,3 +54,4 @@ Feb 2018 - added warning for negative DOS values
 Apr 2018 - series of bugfixes for errors occuring at low T
 Aug 2018 - improved specification for spin pol DOS input
 Sep 2018 - fixed problems with large exponentials
+Sep 2018 - fixed logical if statements for gfortran
