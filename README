@@ -46,6 +46,17 @@ Any questions please email me (see above).
 
 John
 
+**************************************************************
+Citation:
+
+If you use the code for calculations that are published, cite
+the following reference:
+
+Buckeridge, Comput. Phys. Commun. 244, 329-342 (2019)
+
+
+**************************************************************
+
 ******
 MIT Open Source Licence
 ******
@@ -55,3 +66,4 @@ Apr 2018 - series of bugfixes for errors occuring at low T
 Aug 2018 - improved specification for spin pol DOS input
 Sep 2018 - fixed problems with large exponentials
 Sep 2018 - fixed logical if statements for gfortran
+Aug 2019 - fixed minor error in DOS integration
