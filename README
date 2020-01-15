@@ -67,3 +67,5 @@ Aug 2018 - improved specification for spin pol DOS input
 Sep 2018 - fixed problems with large exponentials
 Sep 2018 - fixed logical if statements for gfortran
 Aug 2019 - fixed minor error in DOS integration
+Jan 2020 - fixed bug regarding neutral concentrations when total 
+           concentration of a defect is frozen
